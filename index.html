@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDG Focus for Entrepreneurs</title>
-    <link rel="stylesheet" href="style.css">
+    <title>GreenGrowth: Sustainable Business Ideas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Sustainable Development Goals for Entrepreneurs</h1>
-        <p>Explore specific SDGs that align with sustainable business practices and how you can take action.</p>
+        <h1>Welcome to GreenGrowth</h1>
+        <p>Your guide to building sustainable businesses aligned with the SDGs</p>
     </header>
-
-    <div id="app">
-        <div class="sdg-container" id="sdg-list">
-            <!-- Specific SDGs for Entrepreneurs -->
+    
+    <!-- SDG Slider Section -->
+    <section id="sdgs-overview">
+        <h2>Explore the 17 SDGs</h2>
+        <div class="sdg-slider">
+            <!-- Dynamic SDGs will be injected here by JS -->
         </div>
-
-        <div class="sdg-detail" id="sdg-detail">
-            <!-- Detailed description of the selected SDG -->
-        </div>
-    </div>
-
+    </section>
+    
+    <!-- Form to calculate ecological impact -->
+    <section id="calculate-impact">
+        <h2>Calculate your Business's Ecological Impact</h2>
+        <form id="impact-form">
+            <label for="energy-consumption">Energy Consumption (kWh):</label>
+            <input type="number" id="energy-consumption" required>
+            <label for="materials-used">Materials Used (kg):</label>
+            <input type="number" id="materials-used" required>
+            <button type="submit">Calculate Impact</button>
+        </form>
+        <p id="impact-result"></p>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 - Promoting Sustainable Business Practices through SDGs</p>
+        <p>&copy; 2025 GreenGrowth</p>
     </footer>
-
-    <script src="app.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
